@@ -1,0 +1,50 @@
+body{
+	margin: 0;
+	font-size: 1.1em;
+}
+header, header > section#subBar{
+    display: flex;
+    background-color: #333;
+}
+
+#subBar {
+    flex-grow: 1;
+}
+
+header div {
+    padding: 1em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header div:hover {
+	background-color: #555;
+	color: white;
+}
+
+.active {
+	background-color: green;
+}
+
+#endPageLinks {
+    margin-right: auto;
+}
+
+#homePage {
+    background-image:  url("../Files/Images/me2.jpg");
+    background-size: cover;
+}
+
+main {
+    width: 100%;
+}
+
+footer {
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
+}
+

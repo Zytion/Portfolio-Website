@@ -3,7 +3,7 @@
 	src: url('../Files/EBGaramond-0.016/otf/EBGaramond12-Regular.otf'),
 		url('../Files/EBGaramond-0.016/ttf/EBGaramond12-Regular.ttf') format('truetype');
 }
-div{
+footer{
 	position: absolute;
 	font-size: 1.5em;
 	bottom: 5%;
@@ -54,6 +54,7 @@ ul li a:hover {
 	float:left;
 	padding-left: 1%;
 }
+
 .index{
 	background-image:  url("../Files/Images/me2.jpg");
 }
