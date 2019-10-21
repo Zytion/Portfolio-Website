@@ -1,13 +1,30 @@
 body{
 	margin: 0;
-	font-size: 1.1em;
-}
-header, header > section#subBar{
+    font-size: 1.1em;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image:  url("../Files/Images/me2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+figure, figure > img {
+    margin: 0;
+    width: 100%;
+}
+header {
+    display: flex;
+    color: white;
+    margin: 0;
+    padding: 0 0 0 1em;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
     background-color: #333;
+    align-items: center;
 }
 
 #subBar {
+    display: flex;
     flex-grow: 1;
 }
 
@@ -15,8 +32,10 @@ header div {
     padding: 1em;
 }
 
-a {
-    color: white;
+header a {
+    padding: 1em;
+    color: inherit;
+    font: inherit;
     text-decoration: none;
 }
 
@@ -33,13 +52,9 @@ header div:hover {
     margin-right: auto;
 }
 
-#homePage {
-    background-image:  url("../Files/Images/me2.jpg");
-    background-size: cover;
-}
-
 main {
     width: 100%;
+
 }
 
 footer {
@@ -48,3 +63,45 @@ footer {
     transform: translate(-50%, 0);
 }
 
+@media only screen and (max-width: 1350px) {
+    body {
+        background-image:  url("../Files/Images/me.jpg");
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    /* Make navagation a column */
+    header {
+        flex-flow: column;
+        padding: 0;
+    }
+    #endPageLinks {
+        margin: 0;
+    }
+    /* Hide all navagation links that are not Home */
+    #subBar {
+        width: 100%;
+        font-size: 0.8em;
+        text-align: center;
+        display: none;
+    }
+    /* If you hover over Navagation bar, show other pages */
+    header:hover #subBar {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    /* Make home fill the navagation bar */
+    header > div {
+        margin: 0;
+        padding: 1em 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+    /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px){
+    body {
+        background-image:  url("../Files/Images/me3.jpg");
+    }
+}
