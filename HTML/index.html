@@ -5,32 +5,47 @@
 	<meta charset="utf-8" />
 	<title>Robert Levin</title>
 	<link rel="icon" type="img/png" href="../Files/Images/Logo.png" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/style.css" />
 </head>
 
 <body>
-	<header>
-		<div class="active"><a href="index.html">Robert Levin</a></div>
-		<section id="subBar">
-			<div><a href="../Files/Levin-resume.pdf" target="_blank">Resume</a></div>
-			<div><a href="https://www.linkedin.com/in/robertlevinrit" target="_blank"><img
-						src="../Files/Images/Linkedin_icon.svg" height="16" alt=""> LinkedIn</a></div>
-			<div><a href="https://zytion-levin.itch.io" target="_blank"><img
-						src="../Files/Images/itchio-textless-black.svg" height="16" alt=""> Itch.io</a></div>
-			<div><a href="https://github.com/Zytion" target="_blank"><img src="../Files/Images/GitHub-Mark-64px.png"
-						height="16" alt=""> GitHub</a></div>
-		</section>
+	<header class="topnav" id="myTopnav">
+		<a href="index.html" class="active">Robert Levin</a>
+		<a href="../Files/Levin-resume.pdf" target="_blank">Resume</a>
+		<a href="https://www.linkedin.com/in/robertlevinrit" target="_blank">
+			<!-- <img src="../Files/Images/Linkedin_icon.svg" height="16" alt="">  -->
+			LinkedIn</a>
+		<a href="https://zytion-levin.itch.io" target="_blank">
+			<!-- <img src="../Files/Images/itchio-textless-black.svg" height="16" alt="">  -->
+			Itch.io</a>
+		<a href="https://github.com/Zytion" target="_blank">
+			<!-- <img src="../Files/Images/GitHub-Mark-64px.png" height="16" alt="">  -->
+			GitHub</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
 	</header>
 	<div id="heading">
-			<div>
-				<h1>Robert Levin</h1>
-			</div>
+		<div>
+			<h1>Robert Levin</h1>
 		</div>
+	</div>
 	<main>
 	</main>
 	<footer>
 		Game Design and Devlopment Student at RIT
 	</footer>
 </body>
+<script>
+	function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+	}
+</script>
 
 </html>
