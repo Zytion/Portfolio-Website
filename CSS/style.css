@@ -4,12 +4,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-}
-
-body#index {
-    background-image:  url("../Files/Images/me2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #444;
 }
 
 figure, figure > img {
@@ -29,6 +24,7 @@ header {
 
 #subBar {
     display: flex;
+    flex-direction: row-reverse;
     flex-grow: 1;
 }
 
@@ -52,22 +48,40 @@ header div:hover {
 	background-color: green;
 }
 
-#endPageLinks {
-    margin-right: auto;
-}
-
 main {
     width: 100%;
-    height: 100%;
-}
-footer#indexFoot {
-    color: white;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
-@media only screen and (max-width: 1080px) {
-    body#index {
-        background-image:  url("../Files/Images/me3.jpg");
-    }
+div#heading {
+    background-image: url("../Files/Images/me.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30vw;
+}
+
+div#heading > div {
+    width: 100%;
+    margin: 0;
+    padding: 1em 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0
+    black;
+}
+
+div#heading h1 {
+    background-color: darkgreen;
+    text-align: center;
+    padding: 0.5em;
+}
+
+footer {
+    color: white;
 }
 
 @media only screen and (max-width: 992px) {
@@ -89,7 +103,7 @@ footer#indexFoot {
     /* If you hover over Navagation bar, show other pages */
     header:hover #subBar {
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: column-reverse nowrap;
     }
     /* Make home fill the navagation bar */
     header > div {
@@ -99,17 +113,3 @@ footer#indexFoot {
         text-align: center;
     }
 }
-
-    /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px){
-    body#index {
-        background-image:  url("../Files/Images/me.jpg");
-    }
-}
-
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (max-width: 500px){
-        body#index {
-            background-image:  url("../Files/Images/me4.jpg");
-        }
-    }
