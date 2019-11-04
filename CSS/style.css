@@ -6,7 +6,9 @@ body{
     justify-content: flex-start;
     background-color: #444;
 }
-
+ul {
+  list-style-type: none;
+}
 figure, figure > img {
     margin: 0;
     width: 100%;
@@ -50,6 +52,9 @@ figure, figure > img {
     display: none;
   }
 
+.topnav img {
+  height: 1.12rem;
+}
 main {
     width: 100%;
     display: flex;
@@ -85,6 +90,30 @@ div#heading h1 {
 
 footer {
     color: white;
+}
+
+#portfolio {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#filters > ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+#filters li {
+  padding: 0.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1em;
+  cursor: pointer;
+  border-width: 1px 1px 2px 1px;
+  border-style: solid;
+  border-color:#222;
+  border-radius: 3px;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */

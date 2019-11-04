@@ -4,24 +4,25 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Robert Levin</title>
-	<link rel="icon" type="img/png" href="../Files/Images/Logo.png" />
+	<link rel="icon" type="img/png" href="../Files/Images/logo2.png" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/style.css" />
 </head>
 
 <body>
 	<header class="topnav" id="myTopnav">
-		<a href="index.html" class="active">Robert Levin</a>
-		<a href="../Files/Levin-resume.pdf" target="_blank">Resume</a>
-		<a href="https://www.linkedin.com/in/robertlevinrit" target="_blank">
-			<!-- <img src="../Files/Images/Linkedin_icon.svg" height="16" alt="">  -->
-			LinkedIn</a>
+		<a href="index.html" class="active"><img src="../Files/Images/logo2.png" alt="Robert Levin"></a>
+		<a href="index.html"><i class="fa fa-envelope" aria-hidden="true"> Contact</i></a>
+		<a href="../Files/Levin-resume.pdf" target="_blank"><i class="fa fa-file" aria-hidden="true"> Resume</i></a>
 		<a href="https://zytion-levin.itch.io" target="_blank">
 			<!-- <img src="../Files/Images/itchio-textless-black.svg" height="16" alt="">  -->
-			Itch.io</a>
+			<i class="fa fa-gamepad" aria-hidden="true"> Itch.io</i></a>
+		<a href="https://www.linkedin.com/in/robertlevinrit" target="_blank">
+			<!-- <img src="../Files/Images/Linkedin_icon.svg" height="16" alt="">  -->
+			<i class="fa fa-linkedin" aria-hidden="true"> LinkedIn</i></a>
 		<a href="https://github.com/Zytion" target="_blank">
 			<!-- <img src="../Files/Images/GitHub-Mark-64px.png" height="16" alt="">  -->
-			GitHub</a>
+			<i class="fa fa-github" aria-hidden="true"> GitHub</i></a>
 		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 			<i class="fa fa-bars"></i>
 		</a>
@@ -32,10 +33,35 @@
 		</div>
 	</div>
 	<main>
+		<div id="filters">
+			<ul>
+				<li class="active">Show All</li>
+				<li>Game Design</li>
+				<li>HTML5</li>
+				<li>Unity</li>
+				<li>Unreal</li>
+				<li>C#</li>
+			</ul>
+			<small>Showing all projects</small>
+		</div>
+		<ul id="portfolio">
+			<li>
+				<div>
+					<figure>
+						<img src="../Files/Images/tnta.jpg" alt="">
+						<figcaption>
+							test
+						</figcaption>
+					</figure>
+				</div>
+			</li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
 	</main>
-	<footer>
-		Game Design and Devlopment Student at RIT
-	</footer>
 </body>
 <script>
 	function myFunction() {
