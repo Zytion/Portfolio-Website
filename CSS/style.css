@@ -1,11 +1,12 @@
 #bodyBack {
   position: fixed;
   top: 50%;
-  left: 1vw;
+  left: 0;
   background-color: transparent;
   color: white;
   border: transparent;
   font-size: 2em;
+  width: 10em;
 }
 
 #bodyBack:hover {
@@ -70,7 +71,7 @@ figure, figure > img {
 .topnav img {
   height: 1.12rem;
 }
-main {
+main > * {
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -120,7 +121,7 @@ footer {
   padding: 1em 0;
 }
 
-.project.hidden {
+.hidden {
   display: none;
 }
 

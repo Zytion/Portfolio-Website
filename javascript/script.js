@@ -23,6 +23,7 @@ let filterClick = (e) => {
     }
 }
 
+const backButton = document.querySelector("#bodyBack");
 const filters = document.querySelectorAll("#filters li");
 for (let li of filters) {
     li.addEventListener("click", filterClick);
@@ -30,12 +31,15 @@ for (let li of filters) {
 
 let toProject = () => {
     document.querySelector("main").innerHTML = '';
+    backButton.className = "";
+
 }
 
 let backToMain = () => {
     document.querySelector("main").innerHTML = mainPage;
+    backButton.className = "hidden";
 }
 
-document.querySelector("#bodyBack").addEventListener("click", backToMain);
+backButton.addEventListener("click", backToMain);
 
 const mainPage = document.querySelector("main").innerHTML;
