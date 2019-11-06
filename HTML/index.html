@@ -27,51 +27,196 @@
 			<i class="fa fa-bars"></i>
 		</a>
 	</header>
-	<div id="heading">
-		<div>
-			<h1>Robert Levin</h1>
-		</div>
-	</div>
+	<button id="bodyBack">
+		<i class="fa fa-angle-left" aria-hidden="true"></i>
+	</button>
 	<main>
+		<div id="heading">
+			<div>
+				<h1>Robert Levin</h1>
+			</div>
+		</div>
 		<div id="filters">
 			<ul>
-				<li class="active">Show All</li>
-				<li>Game Design</li>
-				<li>HTML5</li>
-				<li>Unity</li>
-				<li>Unreal</li>
-				<li>C#</li>
+				<li class="active" data-filter="All">Show All</li>
+				<li data-filter="Game">Game Design</li>
+				<li data-filter="Web">Web Dev</li>
+				<li data-filter="Unity">Unity</li>
+				<li data-filter="Unreal">Unreal</li>
+				<li data-filter="C#">C#</li>
+				<li data-filter="Work">Work Expirence</li>
+				<li data-filter="Jam">Game Jams</li>
+				<li data-filter="Python">Python</li>
 			</ul>
-			<small>Showing all projects</small>
+			<small>Showing All projects by date</small>
 		</div>
 		<ul id="portfolio">
-			<li>
-				<div>
-					<figure>
-						<img src="../Files/Images/tnta.jpg" alt="">
-						<figcaption>
-							test
-						</figcaption>
-					</figure>
-				</div>
+			<!-- Aries Defense, LLC June 2019 - Present -->
+			<li class="project" data-filter="Work C#" style="order: -201911;">
+				<figure>
+					<img class="baseImg" src="../Files/Images/tnta.jpg" alt="">
+					<img class="hoverImg" src="../Files/Images/tnta-hover.gif" alt="">
+					<figcaption>
+						<div>
+							Developing an application for using the Aries Defense Tactical Network Trainer Suite on
+							windows devices.
+							Currently working remotely to develop new features and implement customer feedback into the
+							application.
+						</div>
+						<button class="infoButton" onclick="toProject()">
+							More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
+						</button>
+					</figcaption>
+				</figure>
 			</li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
+			<!-- Chromatic Intensity: Global Game Jam Jan 2019 -->
+			<li class="project" data-filter="Game Unity C# Jam" style="order: -201901;">
+				<figure>
+					<img src="../Files/Images/chromatic.jpg" alt="">
+					<figcaption>
+						Chromatic Intensity
+						<button class="infoButton">
+							More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
+						</button>
+					</figcaption>
+				</figure>
+			</li>
+			<!-- Computer Science House Fall Hackathon Oct 2018 -->
+			<li class="project" data-filter="Game C# Unity Jam" style="order: -201810;">
+				<figure>
+					<img src="../Files/Images/shipgame.jpg" alt="">
+					<figcaption>
+						Ship Game
+						<button class="infoButton">
+							More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
+						</button>
+					</figcaption>
+				</figure>
+			</li>
+			<!-- One Moment Please: GMTK Game Jam Aug 2019 -->
+			<li class="project" data-filter="Game C# Unity Jam" style="order: -201908;">
+				<figure>
+					<img class="baseImg" src="../Files/Images/omp.jpg" alt="">
+					<img class="hoverImg" src="../Files/Images/omp-hover.gif" alt="">
+					<figcaption>
+						One Moment Please
+						<button class="infoButton">
+							More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
+						</button>
+					</figcaption>
+				</figure>
+			</li>
+			<!-- Daily Dunce: RIT Game Dev Club Game Jam November 2018 -->
+			<li class="project" data-filter="Game C# Unity Jam" style="order: -201811;">
+				<figure>
+					<img src="../Files/Images/daily.jpg" alt="">
+					<figcaption>
+						Daily Dunce
+						<button class="infoButton">
+							More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
+						</button>
+					</figcaption>
+				</figure>
+			</li>
+			<!-- Server Ducks: BrickHack V Feb 2019 -->
+			<li class="project" data-filter="Game C# Unity Jam" style="order: -201902;">
+				<figure>
+					<img src="../Files/Images/ducks.jpg" alt="">
+					<figcaption>
+						Server Ducks
+						<button class="infoButton">
+							More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
+						</button>
+					</figcaption>
+				</figure>
+			</li>
+			<!-- Edlogics Jul 2017 - Oct 2017 -->
+			<li class="project" data-filter="Work" style="order: -201707;">
+				<figure>
+					<img src="../Files/Images/edlogic.jpg" alt="">
+					<figcaption>
+						<div>
+							Edlogics
+						</div>
+						<button class="infoButton">
+							More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
+						</button>
+					</figcaption>
+				</figure>
+			</li>
+			<!--  Project Riptide Jan 2019 – Present -->
+			<li class="project" data-filter="Game C# Unity" style="order: -201911;">
+				<figure>
+					<img src="../Files/Images/placeholder.jpg" alt="">
+					<figcaption>
+						<div>
+							Project Riptide
+						</div>
+						<button class="infoButton">
+							More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
+						</button>
+					</figcaption>
+				</figure>
+			</li>
+			<!-- Profoilio Website Oct 2018 – Present -->
+			<li class="project" data-filter="Web" style="order: -201911;">
+				<figure>
+					<img src="../Files/Images/placeholder.jpg" alt="">
+					<figcaption>
+						<div>
+							Portfolio Website
+						</div>
+						<button class="infoButton">
+							More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
+						</button>
+					</figcaption>
+				</figure>
+			</li>
+			<!-- IGME 235 Homework Oct 2019 -->
+			<li class="project" data-filter="Web" style="order: -201911;">
+				<figure>
+					<img src="../Files/Images/hinterworld.jpg" alt="">
+					<figcaption>
+						<div>
+							HinterWorld
+						</div>
+						<button class="infoButton">
+							More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
+						</button>
+					</figcaption>
+				</figure>
+			</li>
+			<!-- NSA Teaching March 2016 -->
+			<li class="project" data-filter="Work Game" style="order: -201603;">
+				<figure>
+					<img src="../Files/Images/lvlup.jpg" alt="">
+					<figcaption>
+						<div>
+							NSA Leveled Up Village
+						</div>
+						<button class="infoButton">
+							More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
+						</button>
+					</figcaption>
+				</figure>
+			</li>
+			<!-- NSA Summer Teacher July 2016 -->
+			<li class="project" data-filter="Work Python" style="order: -201607;">
+				<figure>
+					<img src="../Files/Images/nsa1.jpg" alt="">
+					<figcaption>
+						<div>
+							NSA Computer Camp
+						</div>
+						<button class="infoButton">
+							More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
+						</button>
+					</figcaption>
+				</figure>
+			</li>
 		</ul>
 	</main>
 </body>
-<script>
-	function myFunction() {
-		var x = document.getElementById("myTopnav");
-		if (x.className === "topnav") {
-			x.className += " responsive";
-		} else {
-			x.className = "topnav";
-		}
-	}
-</script>
+<script src="../javascript/script.js"></script>
 
 </html>
