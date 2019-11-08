@@ -263,7 +263,8 @@ img.hoverImg {
   padding: 1em;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 #projectContents h1 {
@@ -289,27 +290,41 @@ img.hoverImg {
   width: 30%;
 }
 
-#projectContents #pjLink {
-  padding: 1em 0;
-  font-size: 1.2em;
-  text-decoration: none;
-  text-decoration-line: none;
-}
+
 iframe {
   display: block;
 }
 
 #pjDetails {
-  padding: 0 5em; 
+  padding: 0 5em;
 }
 
-a {
-  color: darkgreen; 
+#pjLink {
+  padding: 1em;
+  align-self: center;
 }
-
-a:visited {
-  color: inherit;
+#pjLink a {
+  color: black;
+  display: inline-block;
   text-decoration: none;
+  border-radius: 1em;
+  padding: 1em;
+  font-size: 1.2em;
+  background-color: #006400;
+  box-shadow: 0 9px #4d4d4d;
+  transition: background-color 0.5s ease-in-out;
+}
+
+#pjLink a:visited {
+  text-decoration: none;
+}
+
+#pjLink a:hover {background-color: #005300}
+
+#pjLink a:active {
+  background-color: #005300;
+  box-shadow: 0 5px #4d4d4d;
+  transform: translateY(4px);
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */

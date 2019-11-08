@@ -36,7 +36,7 @@ let changeDetails = (title, type, date, role, info, img0, img1, link) => {
     let header = document.querySelector("#projectContents h1");
     let details = document.querySelectorAll("#projectContents dd");
     let imgs = document.querySelectorAll("#projectContents img");
-    let projectLink = document.querySelector("#pjLink");
+    let projectLink = document.querySelector("#pjLink span");
 
     header.innerHTML = title;
     details[0].innerHTML = type;
@@ -67,7 +67,7 @@ const mainPage = document.querySelector("main").innerHTML;
 let toProject = (e) => {
     page2.className = "";
 
-    switch (e.target.dataset.project) {
+    switch (e.target.value) {
         case 'aries':
             changeDetails("Aries Defense",
                 "Paid Internship",
