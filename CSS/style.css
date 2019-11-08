@@ -290,7 +290,10 @@ img.hoverImg {
 }
 
 #projectContents #pjLink {
-  padding: 1em 0 0 0;
+  padding: 1em 0;
+  font-size: 1.2em;
+  text-decoration: none;
+  text-decoration-line: none;
 }
 iframe {
   display: block;

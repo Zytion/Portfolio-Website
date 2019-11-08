@@ -51,7 +51,7 @@ let changeDetails = (title, type, date, role, info, img0, img1, link) => {
     else if (link.indexOf('iframe') >= 0)
         projectLink.innerHTML = 'Link to Project: <br>' + link;
     else
-        projectLink.innerHTML = 'Link to Project: ' + link;
+        projectLink.innerHTML = '<a href=' + link + " target=\"_blank\">Project Website</a>";
 }
 
 let backToMain = () => {
@@ -76,7 +76,7 @@ let toProject = (e) => {
                 "",
                 '../Files/Images/tntb.jpg',
                 '../Files/Images/TNTCo.jpg',
-                '<a href="http://www.ariesdefense.com/">Aries Defense Homepage</a>');
+                'http://www.ariesdefense.com/');
             break;
         case 'riptide':
             changeDetails("Project Riptide",
@@ -102,7 +102,7 @@ let toProject = (e) => {
                 "",
                 '',
                 '',
-                '<iframe src="https://itch.io/embed/362109?dark=true" width="552" height="167" frameborder="0"></iframe>');
+                'https://zytion-levin.itch.io/chromatic-intensity');
             break;
         case 'ship':
             changeDetails("Untitle Ship Game",
@@ -112,7 +112,7 @@ let toProject = (e) => {
                 "",
                 '',
                 '',
-                '<iframe src="https://itch.io/embed/314125?dark=true" width="552" height="167" frameborder="0"></iframe>');
+                'https://zytion-levin.itch.io/csh-hackathon-fall-2018');
             break;
         case 'omp':
             changeDetails("One Moment Please",
@@ -122,7 +122,7 @@ let toProject = (e) => {
                 "",
                 '',
                 '',
-                '<iframe src="https://itch.io/embed/462130?dark=true" width="552" height="167" frameborder="0"></iframe>');
+                'https://zytion-levin.itch.io/one-moment-please');
             break;
         case 'dunce':
             changeDetails("Daily Dunce",
@@ -132,7 +132,7 @@ let toProject = (e) => {
                 "",
                 '',
                 '',
-                '<iframe src="https://itch.io/embed/328846?dark=true" width="552" height="167" frameborder="0"></iframe>');
+                'https://zytion-levin.itch.io/daily-dunce');
             break;
         case 'ducks':
             changeDetails("Server Ducks",
@@ -142,7 +142,7 @@ let toProject = (e) => {
                 "",
                 '',
                 '',
-                '<iframe src="https://itch.io/embed/371924?dark=true" width="552" height="167" frameborder="0"></iframe>');
+                'https://zytion-levin.itch.io/server-ducks');
             break;
         case 'edlogics':
             changeDetails("Edlogics",
@@ -152,7 +152,7 @@ let toProject = (e) => {
                 "",
                 '',
                 '',
-                '<a href="http://www.edlogics.com/">Edlogics Homepage</a>')
+                'http://www.edlogics.com/')
             break;
         case 'portfolio':
             changeDetails("Portfolio Website",
@@ -162,7 +162,7 @@ let toProject = (e) => {
                 "",
                 '',
                 '',
-                '<a href="index.html">www.people.rit.edu/bil1616</a>');
+                'index.html');
             break;
         case 'hinterworld':
             changeDetails("Hinterworld",
@@ -172,7 +172,7 @@ let toProject = (e) => {
                 "",
                 '',
                 ' ',
-                '<a href="https://people.rit.edu/bil1616/235/project1/">Hinterworld Webpage</a>');
+                'https://people.rit.edu/bil1616/235/project1/');
             break;
         case 'luv':
             changeDetails("Level Up Village",
@@ -182,7 +182,7 @@ let toProject = (e) => {
                 "",
                 '',
                 '',
-                '<a href="https://www.levelupvillage.com/">Level Up Village Homepage</a>');
+                'https://www.levelupvillage.com/');
             break;
         case 'compcamp':
             changeDetails("NSA Computer Camp",
