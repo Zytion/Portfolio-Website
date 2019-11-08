@@ -1,0 +1,18 @@
+filters {
+	
+}
+
+projects {
+	aries
+	riptide
+	chromatic
+	ship
+	omp
+	dunce
+	ducks
+	edlogics
+	portfolio
+	hinterworld
+	luv
+	compcamp
+}

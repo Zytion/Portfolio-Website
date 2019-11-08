@@ -27,9 +27,6 @@
 			<i class="fa fa-bars"></i>
 		</a>
 	</header>
-	<button id="bodyBack" class="hidden">
-		<i class="fa fa-angle-left" aria-hidden="true"> Back to Portfolio</i>
-	</button>
 	<main>
 		<div id="page1">
 			<div id="heading">
@@ -65,7 +62,7 @@
 								the
 								application.
 							</div>
-							<button class="infoButton" onclick="toProject()">
+							<button data-project="aries" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
 							</button>
 						</figcaption>
@@ -77,7 +74,7 @@
 						<img src="../Files/Images/chromatic.jpg" alt="">
 						<figcaption>
 							Chromatic Intensity
-							<button class="infoButton">
+							<button data-project="chromatic" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
 							</button>
 						</figcaption>
@@ -89,7 +86,7 @@
 						<img src="../Files/Images/shipgame.jpg" alt="">
 						<figcaption>
 							Ship Game
-							<button class="infoButton">
+							<button data-project="ship" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
 							</button>
 						</figcaption>
@@ -102,7 +99,7 @@
 						<img class="hoverImg" src="../Files/Images/omp-hover.gif" alt="">
 						<figcaption>
 							One Moment Please
-							<button class="infoButton">
+							<button data-project="omp" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
 							</button>
 						</figcaption>
@@ -114,7 +111,7 @@
 						<img src="../Files/Images/daily.jpg" alt="">
 						<figcaption>
 							Daily Dunce
-							<button class="infoButton">
+							<button data-project="dunce" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
 							</button>
 						</figcaption>
@@ -126,7 +123,7 @@
 						<img src="../Files/Images/ducks.jpg" alt="">
 						<figcaption>
 							Server Ducks
-							<button class="infoButton">
+							<button data-project="ducks" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
 							</button>
 						</figcaption>
@@ -140,7 +137,7 @@
 							<div>
 								Edlogics
 							</div>
-							<button class="infoButton">
+							<button data-project="edlogics" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
 							</button>
 						</figcaption>
@@ -154,7 +151,7 @@
 							<div>
 								Project Riptide
 							</div>
-							<button class="infoButton">
+							<button data-project="riptide" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
 							</button>
 						</figcaption>
@@ -168,7 +165,7 @@
 							<div>
 								Portfolio Website
 							</div>
-							<button class="infoButton">
+							<button data-project="portfolio" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
 							</button>
 						</figcaption>
@@ -182,7 +179,7 @@
 							<div>
 								HinterWorld
 							</div>
-							<button class="infoButton">
+							<button data-project="hinterworld" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
 							</button>
 						</figcaption>
@@ -196,21 +193,21 @@
 							<div>
 								NSA Leveled Up Village
 							</div>
-							<button class="infoButton">
+							<button data-project="luv" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
 							</button>
 						</figcaption>
 					</figure>
 				</li>
 				<!-- NSA Summer Teacher July 2016 -->
-				<li class="project" data-filter="Work Python" style="order: -201607;">
+				<li class="project" data-filter="Work Python hide" style="order: -201607;">
 					<figure>
 						<img src="../Files/Images/nsa1.jpg" alt="">
 						<figcaption>
 							<div>
 								NSA Computer Camp
 							</div>
-							<button class="infoButton">
+							<button data-project="compcamp" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
 							</button>
 						</figcaption>
@@ -218,8 +215,30 @@
 				</li>
 			</ul>
 		</div>
-		<div id="page2" class="hidden">
-
+		<div id="page2" class="OOF">
+			<button id="bodyBack">
+				<i class="fa fa-angle-left" aria-hidden="true"> Back to Portfolio</i>
+			</button>
+			<div id="projectContents">
+				<h1>Server Ducks</h1>
+				<div id="pjLink"></div>
+				<dl>
+					<dt>Project Type</dt>
+					<dd>Game Jam</dd>
+					<dt>Date</dt>
+					<dd>February 2019</dd>
+					<dt>Role</dt>
+					<dd>Server Programmer</dd>
+					<dt>Details</dt>
+					<dd id="pjDetails">
+						Lorem ipsum dolor
+					</dd>
+				</dl>
+				<figure>
+					<img src="" alt="">
+					<img src="" alt="">
+				</figure>
+			</div>
 		</div>
 	</main>
 </body>
