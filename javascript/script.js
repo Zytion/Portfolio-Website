@@ -23,7 +23,6 @@ let filterClick = (e) => {
     }
 }
 
-const backButton = document.querySelector("#bodyBack");
 const filters = document.querySelectorAll("#filters li");
 for (let li of filters) {
     li.addEventListener("click", filterClick);
@@ -47,7 +46,7 @@ let changeDetails = (title, type, date, role, info, img0, img1, link) => {
     imgs[1].src = img1;
     console.log(link);
     if (link == '')
-        document.querySelector("#pjLink").innerHTML = '';
+        projectLink.innerHTML = '';
     else if (link.indexOf('iframe') >= 0)
         projectLink.innerHTML = 'Link to Project: <br>' + link;
     else
@@ -60,7 +59,7 @@ let backToMain = () => {
 
 const projectButtons = document.querySelectorAll(".infoButton");
 
-backButton.addEventListener("click", backToMain);
+page2.addEventListener("click", backToMain);
 
 const mainPage = document.querySelector("main").innerHTML;
 
@@ -74,8 +73,8 @@ let toProject = (e) => {
                 "July 2019 - Present",
                 "Software Enginner",
                 "",
-                '../Files/Images/tntb.jpg',
-                '../Files/Images/TNTCo.jpg',
+                'Files/Images/tntb.jpg',
+                'Files/Images/TNTCo.jpg',
                 'http://www.ariesdefense.com/');
             break;
         case 'riptide':
