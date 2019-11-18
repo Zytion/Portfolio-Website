@@ -30,7 +30,7 @@ figure, figure > img {
     display: flex;
     color: #f2f2f2;
     text-align: center;
-    padding: 1em;
+    padding: 0.5em;
     text-decoration: none;
   }
   
@@ -57,7 +57,7 @@ figure, figure > img {
   }
 
 .topnav img {
-  height: 1.12rem;
+  height: 2em;
 }
 main > * {
     width: 100%;
