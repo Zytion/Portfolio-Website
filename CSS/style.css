@@ -118,7 +118,7 @@ footer {
 }
 
 .project figure {
-  border-radius: 1em;
+  border-radius: 0.5em;
   position: relative;
   text-align: center;
 }
@@ -310,7 +310,7 @@ iframe {
   color: white;
   display: inline-block;
   text-decoration: none;
-  border-radius: 0.25em;
+  border-radius: 0.1em;
   padding: 0.5em;
   font-size: 1em;
   background-color: #006400;
