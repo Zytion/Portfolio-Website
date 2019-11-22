@@ -138,8 +138,8 @@ figure *{
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
-  -webkit-transition: .5s ease-in-out 0.5s;
-  transition: .5s ease-in-out 0.5s;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .project figure:hover figcaption {
