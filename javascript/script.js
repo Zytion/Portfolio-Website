@@ -9,18 +9,21 @@ function myFunction() {
 
 let projects = document.querySelectorAll(".project");
 let small = document.querySelector("#filters small");
-
+let loadtime = 1000;
 let filterClick = (e) => {
-    let filter = e.target.dataset.filter;
-    small.innerHTML = "Showing " + filter + " projects by date";
-    for (let project of projects) {
-        if ((project.dataset.filter.indexOf(filter) != -1 || filter == "All") && project.dataset.filter.indexOf("hide") == -1) {
-            project.className = "project";
+    load();
+    setTimeout(() => {
+        let filter = e.target.dataset.filter;
+        small.innerHTML = "Showing " + filter + " projects by date";
+        for (let project of projects) {
+            if ((project.dataset.filter.indexOf(filter) != -1 || filter == "All") && project.dataset.filter.indexOf("hide") == -1) {
+                project.className = "project";
+            }
+            else {
+                project.className = "project hidden";
+            }
         }
-        else {
-            project.className = "project hidden";
-        }
-    }
+    }, loadtime/2);
 }
 
 const filters = document.querySelectorAll("#filters li");
@@ -50,7 +53,7 @@ let changeDetails = (title, type, date, role, info, img0, img1, link) => {
     else if (link.indexOf('iframe') >= 0)
         projectLink.innerHTML = 'Link to Project: <br>' + link;
     else
-        projectLink.innerHTML = '<a href=' + link + " target=\"_blank\">Project Website</a>";
+        projectLink.innerHTML = '<a href=' + link + ` target="_blank">Project Website <i class="fa fa-external-link" aria-hidden="true"></i></a>`;
 }
 
 let backToMain = () => {
@@ -63,7 +66,29 @@ page2.addEventListener("click", backToMain);
 
 const mainPage = document.querySelector("main").innerHTML;
 
+function load() {
+    document.querySelector("#loadingTop").className = "load";
+    document.querySelector("#loadingBot").className = "load";
+
+    setTimeout(() => {
+        document.querySelector("#loadingTop").className = "unload";
+        document.querySelector("#loadingBot").className = "unload";
+
+        setTimeout(() => {
+            document.querySelector("#loadingTop").className = "reset";
+            document.querySelector("#loadingBot").className = "reset";
+        }, loadtime);
+        
+    }, loadtime);
+}
+
+function unload() {
+
+}
+
 let toProject = (e) => {
+    load();
+
     page2.className = "";
 
     switch (e.target.value) {

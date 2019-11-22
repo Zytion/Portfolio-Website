@@ -13,6 +13,10 @@ button {
   cursor: pointer;
 }
 
+h1 {
+  color: white;
+}
+
 figure, figure > img {
     margin: 0;
     width: 100%;
@@ -62,7 +66,7 @@ main > * {
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    transition: transform 1s ease-in-out;
+    transition: transform 0.5s ease-in-out 0.5s;
 }
 
 div#heading {
@@ -134,8 +138,8 @@ figure *{
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out 0.5s;
+  transition: .5s ease-in-out 0.5s;
 }
 
 .project figure:hover figcaption {
@@ -145,7 +149,7 @@ figure *{
 }
 
 img.baseImg {
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out 0.5s;
 }
 
 .project:hover img.baseImg {
@@ -165,8 +169,6 @@ img.hoverImg {
   height: 3em;
   background-color: transparent;
   color: white;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
 }
 
 .infoButton:hover {
@@ -184,6 +186,8 @@ img.hoverImg {
   z-index: 10;
   background-color: #3f3f3f;
   padding: 0 0 1em 0;
+  color: white;
+  text-shadow: 1px 1px grey;
 }
 
 #filters small {
@@ -240,7 +244,8 @@ img.hoverImg {
 }
 
 .OOF {
-  transform: translate(-100vw , 0);
+  transform: translate(-100% , 0);
+  z-index: -1000;
 }
 
 #bodyBack {
@@ -299,19 +304,18 @@ iframe {
 }
 
 #pjLink {
-  padding: 1em;
-  align-self: center;
+  padding: 0.25em;
 }
 #pjLink a {
-  color: black;
+  color: white;
   display: inline-block;
   text-decoration: none;
-  border-radius: 1em;
-  padding: 1em;
-  font-size: 1.2em;
+  border-radius: 0.25em;
+  padding: 0.5em;
+  font-size: 1em;
   background-color: #006400;
-  box-shadow: 0 9px #4d4d4d;
-  transition: background-color 0.5s ease-in-out;
+  box-shadow: 0 5px #4d4d4d;
+  transition: background-color 0.1s linear;
 }
 
 #pjLink a:visited {
@@ -322,8 +326,61 @@ iframe {
 
 #pjLink a:active {
   background-color: #005300;
-  box-shadow: 0 5px #4d4d4d;
+  box-shadow: 0 3px #4d4d4d;
   transform: translateY(4px);
+}
+
+#loadingTop, #loadingBot {
+  transition: transform 0.5s ease-in-out;
+  width:  100vw;
+  height: 50vh;
+  text-align: center;
+  z-index: 10000;
+  position: fixed;
+  left: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+#loadingTop {
+  background-color: #333333;
+  top: 0;
+  transform: translateX(100vw);
+  align-items: flex-end;
+}
+
+#loadingTop h1 {
+  margin: 0;
+}
+
+#loadingBot {
+  background-color: #444444;
+  bottom: 0;
+  transform: translateX(-100vw);
+  align-items: flex-start;
+}
+
+#loadingTop.load, #loadingBot.load {
+  transform: translateX(0);
+}
+
+#loadingBot.unload {
+  transform: translateX(100vw);
+}
+#loadingTop.unload {
+  transform: translateX(-100vw);
+}
+
+#loadingTop h1 {
+  position: relative;
+  bottom: 0;
+}
+
+.reset {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
