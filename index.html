@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8" />
@@ -11,9 +11,7 @@
 
 <body>
 	<header class="topnav" id="myTopnav">
-		<a href="index.html" class="active"><img src="Files/Images/logo2.png" alt="Robert Levin"></a>
-		<a href="index.html"><i class="fa fa-envelope" aria-hidden="true"> Contact</i></a>
-		<a href="Files/Levin-resume.pdf" target="_blank"><i class="fa fa-file" aria-hidden="true"> Resume</i></a>
+		<a href="index.html" class="active"><img src="Files/Images/logo2.png" alt="Robert Levin" height="38"></a>
 		<a href="https://zytion-levin.itch.io" target="_blank">
 			<!-- <img src="Files/Images/itchio-textless-black.svg" height="16" alt="">  -->
 			<i class="fa fa-gamepad" aria-hidden="true"> Itch.io</i></a>
@@ -23,11 +21,14 @@
 		<a href="https://github.com/Zytion" target="_blank">
 			<!-- <img src="Files/Images/GitHub-Mark-64px.png" height="16" alt="">  -->
 			<i class="fa fa-github" aria-hidden="true"> GitHub</i></a>
+		<a href="Files/Levin-resume.pdf" target="_blank"><i class="fa fa-file" aria-hidden="true"> Resume</i></a>
+		<a href="HTML/mailform.php"><i class="fa fa-envelope" aria-hidden="true"> Contact</i></a>
 		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 			<i class="fa fa-bars"></i>
 		</a>
 	</header>
 	<main>
+
 		<div id="page1">
 			<div id="heading">
 				<div>
@@ -51,17 +52,16 @@
 			<ul id="portfolio">
 				<!-- Aries Defense, LLC June 2019 - Present -->
 				<li class="project" data-filter="Work C#" style="order: -201911;">
-					<figure>
+					<figure class="projectFig">
 						<img class="baseImg" src="Files/Images/tnta.jpg" alt="">
 						<img class="hoverImg" src="Files/Images/tnta-hover.gif" alt="">
 						<figcaption>
 							<h2>Aries Defense Internship</h2>
 							<div>
-								Developing an application for using the Aries Defense Tactical Network Trainer Suite on
+								Developed an application for using the Aries Defense Tactical Network Trainer Suite on
 								windows devices.
 								Currently working remotely to develop new features and implement customer feedback into
-								the
-								application.
+								the application.
 							</div>
 							<button value="aries" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -71,14 +71,14 @@
 				</li>
 				<!-- Chromatic Intensity: Global Game Jam Jan 2019 -->
 				<li class="project" data-filter="Game Unity C# Jam" style="order: -201901;">
-					<figure>
+					<figure class="projectFig">
 						<img src="Files/Images/chromatic.jpg" alt="">
 						<figcaption>
 							<h2>Chromatic Intensity</h2>
 							<div>
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum possimus necessitatibus
-								tempora veritatis voluptatem, repudiandae obcaecati reprehenderit assumenda quidem alias
-								voluptates ut optio error deserunt officia nostrum itaque harum iure.
+								Submitted for the Global Game Jam for 2019, this project was my first time working on a
+								game project in a large team (6 members). It is a 2D platformer where you unlock power
+								ups- such as a grapple and sprinting ability- as you progress in the game.
 							</div>
 							<button value="chromatic" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -88,14 +88,14 @@
 				</li>
 				<!-- Computer Science House Fall Hackathon Oct 2018 -->
 				<li class="project" data-filter="Game C# Unity Jam" style="order: -201810;">
-					<figure>
+					<figure class="projectFig">
 						<img src="Files/Images/shipgame.jpg" alt="">
 						<figcaption>
 							<h2>Ship Game</h2>
 							<div>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio id eius ipsam doloribus
-								cum excepturi sed repellat alias cumque autem non repellendus eligendi in commodi,
-								exercitationem provident rerum! Corrupti, facilis.
+								A coding challenge for RIT’s Computer Science House’s October Hackathon. I wanted to go
+								beyond Unity’s NavMesh AI and focus on basic AI concepts such as follow, fleeing, and
+								patrolling.
 							</div>
 							<button value="ship" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -105,15 +105,15 @@
 				</li>
 				<!-- One Moment Please: GMTK Game Jam Aug 2019 -->
 				<li class="project" data-filter="Game C# Unity Jam" style="order: -201908;">
-					<figure>
+					<figure class="projectFig">
 						<img class="baseImg" src="Files/Images/omp.jpg" alt="">
 						<img class="hoverImg" src="Files/Images/omp-hover.gif" alt="">
 						<figcaption>
 							<h2>One Moment Please</h2>
 							<div>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rerum doloribus repellat,
-								sed ex eaque eveniet cum. Iusto aperiam impedit delectus odio aut expedita rerum atque
-								quia recusandae, eos repellat.
+								My submission for the Game Maker’s Toolkit Game Jam for 2019. This is a top-down
+								turn-based puzzle game, where you have one minute to enter commands for your worker
+								before he executes your commands in turn order against the robots.
 							</div>
 							<button value="omp" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -123,14 +123,16 @@
 				</li>
 				<!-- Daily Dunce: RIT Game Dev Club Game Jam November 2018 -->
 				<li class="project" data-filter="Game C# Unity Jam" style="order: -201811;">
-					<figure>
+					<figure class="projectFig">
 						<img src="Files/Images/daily.jpg" alt="">
 						<figcaption>
 							<h2>Daily Dunce</h2>
 							<div>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, aperiam omnis iusto,
-								amet voluptatem quos officiis reprehenderit, quod laborum itaque numquam quam
-								blanditiis. Iste doloremque, consectetur repellat quia eius molestiae?
+								Created for RIT Game Dev Club’s 2018 Game Jam. The theme was ‘Daily life’ and we wanted
+								to create a game where you have to perform chores but with a handicap. Our idea was to
+								have the player character be ‘drunk’, represented by the camera and player controls
+								being oversensitive and prone to random effects. We created 3 levels where you have to
+								feed your pet cat, drive to the store, and get groceries.
 							</div>
 							<button value="dunce" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -140,14 +142,15 @@
 				</li>
 				<!-- Server Ducks: BrickHack V Feb 2019 -->
 				<li class="project" data-filter="Game C# Unity Jam" style="order: -201902;">
-					<figure>
+					<figure class="projectFig">
 						<img src="Files/Images/ducks.jpg" alt="">
 						<figcaption>
 							<h2>Server Ducks</h2>
 							<div>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam optio, quos magnam ex
-								quisquam ducimus quibusdam nostrum voluptate accusamus est voluptas quod sint mollitia
-								aut temporibus, voluptatem dolorem recusandae error?
+								A project created during RIT’s BrickHack V Hackathon. For this project my team and I
+								wanted to focus on a new and interesting programming challenge for our game. We decided
+								to create a game where we would have to program a server software and client software
+								for a multiplayer jousting game.
 							</div>
 							<button value="ducks" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -156,8 +159,8 @@
 					</figure>
 				</li>
 				<!-- Edlogics Jul 2017 - Oct 2017 -->
-				<li class="project" data-filter="Work" style="order: -201707;">
-					<figure>
+				<li class="project" data-filter="Work hide" style="order: -201707;">
+					<figure class="projectFig">
 						<img src="Files/Images/edlogic.jpg" alt="">
 						<figcaption>
 							<h2>Edlogics</h2>
@@ -174,14 +177,14 @@
 				</li>
 				<!--  Project Riptide Jan 2019 – Present -->
 				<li class="project" data-filter="Game C# Unity" style="order: -201911;">
-					<figure>
-						<img src="Files/Images/placeholder.jpg" alt="">
+					<figure class="projectFig">
+						<img src="Files/Images/ImageSources/riptide1.jpg" alt="">
 						<figcaption>
 							<h2>Project Riptide</h2>
 							<div>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam fugiat incidunt ullam
-								deserunt nulla! Hic, nemo excepturi. Doloribus obcaecati, labore iusto beatae voluptate
-								aliquam culpa tempore, laudantium deserunt, quo veniam?
+								Project Riptide is my first attempt at a long term, large scale game project. We are a
+								team of 7 working to develop (and hopefully release) a fully working mobile sailing
+								game.
 							</div>
 							<button value="riptide" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -191,14 +194,14 @@
 				</li>
 				<!-- Profoilio Website Oct 2018 – Present -->
 				<li class="project" data-filter="Web" style="order: -201911;">
-					<figure>
-						<img src="Files/Images/placeholder.jpg" alt="">
+					<figure class="projectFig">
+						<img src="Files/Images/ImageSources/porfolio1.PNG" alt="">
 						<figcaption>
 							<h2>Portfolio Website</h2>
 							<div>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, blanditiis
-								maiores debitis dolorum, sint voluptatem magnam repellat quidem excepturi explicabo
-								totam, illum repudiandae et eius possimus saepe est praesentium optio.
+								This website was made to display any past, current, and future projects I am a part of.
+								It servers as an online repository for most of my projects and allows anyone to browse
+								my project lists in a much easier manner.
 							</div>
 							<button value="portfolio" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -208,14 +211,14 @@
 				</li>
 				<!-- IGME 235 Homework Oct 2019 -->
 				<li class="project" data-filter="Web" style="order: -201911;">
-					<figure>
+					<figure class="projectFig">
 						<img src="Files/Images/hinterworld.jpg" alt="">
 						<figcaption>
-							<h2>HinterWorld</h2>
+							<h2>Meat Clicker</h2>
 							<div>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consectetur ab, quo
-								aspernatur ullam eius dolores rem, corrupti fugiat perferendis ipsam magni eligendi!
-								Voluptas enim necessitatibus corrupti voluptate quasi earum.
+								An idle clicker game created using HTML, CSS, and JS. The goal of the this game is to
+								build up as large a village as possible. Click on meat, assign your villagers to jobs,
+								and build upgrades to create a bustling village.
 							</div>
 							<button value="hinterworld" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -224,8 +227,8 @@
 					</figure>
 				</li>
 				<!-- NSA Teaching March 2016 -->
-				<li class="project" data-filter="Work Game" style="order: -201603;">
-					<figure>
+				<li class="project" data-filter="Work Game hide" style="order: -201603;">
+					<figure class="projectFig">
 						<img src="Files/Images/lvlup.jpg" alt="">
 						<figcaption>
 							<h2>NSA Leveled Up Village</h2>
@@ -242,7 +245,7 @@
 				</li>
 				<!-- NSA Summer Teacher July 2016 -->
 				<li class="project" data-filter="Work Python hide" style="order: -201607;">
-					<figure>
+					<figure class="projectFig">
 						<img src="Files/Images/nsa1.jpg" alt="">
 						<figcaption>
 							<h2>NSA Computer Camp</h2>
@@ -278,9 +281,10 @@
 						Lorem ipsum dolor
 					</dd>
 				</dl>
-				<figure>
-					<img src="" alt="">
-					<img src="" alt="">
+				<figure id="portFig">
+					<!-- These Images are replaced in the script, I know that they error -->
+					<img src="Files/Images/placeholder.jpg" alt="">
+					<img src="Files/Images/placeholder.jpg" alt="">
 				</figure>
 			</div>
 		</div>
@@ -291,7 +295,8 @@
 
 		</div>
 	</main>
+	<script src="javascript/headerScript.js"></script>
+	<script src="javascript/main.js"></script>
 </body>
-<script src="javascript/script.js"></script>
 
 </html>

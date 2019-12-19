@@ -17,16 +17,21 @@ h1 {
   color: white;
 }
 
-figure, figure > img {
+figure.projectFig, .projectFig > img {
     margin: 0;
     width: 100%;
     height: 100%; 
+}
+
+#portFig img {
+  width: 30%;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
     overflow: hidden;
+    display: flex;
   }
   
   /* Style the links inside the navigation bar */
@@ -40,6 +45,10 @@ figure, figure > img {
   
   .topnav a:not(:first-child) {
       float: right;
+  }
+
+  .topnav a:not(:first-child) > i{
+    vertical-align: middle;
   }
 
   /* Change the color of links on hover */
@@ -143,6 +152,15 @@ figure *{
   transition: .5s ease-in-out;
 }
 
+.project h2 {
+  margin: 0.5em 0;
+  width: 100%;
+}
+
+.project figcaption > div {
+  padding: 0 1.5em;
+}
+
 .project figure:hover figcaption {
   background-color: #2222228f;
   color: white;
@@ -170,16 +188,12 @@ img.hoverImg {
   height: 3em;
   background-color: transparent;
   color: white;
+  margin: 1em 0;
 }
 
 .infoButton:hover {
   background-color: #ffffff80;
 }
-
-.project figcaption > div {
-  padding: 0 1.5em;
-}
-
 #filters {
   position: sticky;
   top: 0;
@@ -305,7 +319,7 @@ iframe {
 }
 
 #pjLink {
-  padding: 0.25em;
+  padding: 1em;
 }
 #pjLink a {
   color: white;
@@ -385,7 +399,7 @@ iframe {
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .project {
     width: 90%;
     padding: 1em 0;
@@ -393,9 +407,15 @@ iframe {
   #portfolio, #filters > ul {
     padding: 0;
   }
+  #bodyBack {
+    display: none;
+  }
 }
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 600px) {
+    .topnav {
+      display: block;
+    }
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;
@@ -404,7 +424,7 @@ iframe {
     }
     .topnav.responsive a {
       float: none;
-      display: block;
+      display: block !important;
       text-align: left;
     }
     .topnav a:not(:first-child) {display: none;}
@@ -414,5 +434,17 @@ iframe {
     }
     #filters li {
       font-size: 0.7em;
+    }
+    #pjDetails {
+      padding: 0;
+    }
+    figure#portFig > img{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    figcaption {
+      font-size: smaller;
     }
   }
