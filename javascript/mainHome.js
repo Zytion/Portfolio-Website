@@ -1,16 +1,14 @@
+window.onload = function load() {
+    filterProjects("All");
+}
+
 let projects = document.querySelectorAll(".project");
 let small = document.querySelector("#filters small");
 let loadtime = 1000;
 let filterClick = (e) => {
-    for (let li of filters) {
-        li.removeEventListener("click", filterClick);
-    }
     load();
     setTimeout(() => {
         filterProjects(e.target.dataset.filter);
-        setTimeout(() => {
-            unload();
-        }, loadtime / 2);
     }, loadtime / 2);
 }
 
@@ -48,10 +46,12 @@ let changeDetails = (title, type, date, role, info, headerImg, img0, link) => {
     details[2].innerHTML = role;
     details[3].innerHTML = info;
     if(headerImg == '')
-        $(headImage).css('background-image', `url("")`);
+        $(headImage).css('background-image', `url("235/portfolio/Files/Images/me.jpg")`);
     else
-        $(headImage).css('background-image', `url("Files/Images/ProjectHeaders/${headerImg}")`);
-    imgs[0].src = "Files/Images/DetailsImages/" + img0;
+        $(headImage).css('background-image', `url("235/portfolio/${headerImg}")`);
+    if(img0 != '')
+        img0 = '235/portfolio/' + img0;
+    imgs[0].src = img0;
     console.log(link);
     if (link == '')
         projectLink.innerHTML = '';
@@ -60,7 +60,6 @@ let changeDetails = (title, type, date, role, info, headerImg, img0, link) => {
     else
         projectLink.innerHTML = '<a href=' + link + ` target="_blank">Project Website <i class="fa fa-external-link" aria-hidden="true"></i></a>`;
 }
-
 
 let backToMain = () => {
     page2.className = "OOF";
@@ -90,7 +89,5 @@ function load() {
 }
 
 function unload() {
-    for (let li of filters) {
-        li.addEventListener("click", filterClick);
-    }
+
 }

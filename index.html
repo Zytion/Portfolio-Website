@@ -7,6 +7,7 @@
 	<link rel="icon" type="img/png" href="Files/Images/logo2.png" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="CSS/style.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -14,13 +15,16 @@
 		<a href="index.html" class="active"><img src="Files/Images/logo2.png" alt="Robert Levin" height="38"></a>
 		<a href="https://zytion-levin.itch.io" target="_blank">
 			<!-- <img src="Files/Images/itchio-textless-black.svg" height="16" alt="">  -->
-			<i class="fa fa-gamepad" aria-hidden="true"> Itch.io</i></a>
+			<i class="fa fa-gamepad" aria-hidden="true"> Itch.io</i>
+		</a>
 		<a href="https://www.linkedin.com/in/robertlevinrit" target="_blank">
 			<!-- <img src="Files/Images/Linkedin_icon.svg" height="16" alt="">  -->
-			<i class="fa fa-linkedin" aria-hidden="true"> LinkedIn</i></a>
+			<i class="fa fa-linkedin" aria-hidden="true"> LinkedIn</i>
+		</a>
 		<a href="https://github.com/Zytion" target="_blank">
 			<!-- <img src="Files/Images/GitHub-Mark-64px.png" height="16" alt="">  -->
-			<i class="fa fa-github" aria-hidden="true"> GitHub</i></a>
+			<i class="fa fa-github" aria-hidden="true"> GitHub</i>
+		</a>
 		<a href="Files/Levin-resume.pdf" target="_blank"><i class="fa fa-file" aria-hidden="true"> Resume</i></a>
 		<a href="HTML/mailform.php"><i class="fa fa-envelope" aria-hidden="true"> Contact</i></a>
 		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -28,9 +32,8 @@
 		</a>
 	</header>
 	<main>
-
 		<div id="page1">
-			<div id="heading">
+			<div class="heading">
 				<div>
 					<h1>Robert Levin</h1>
 				</div>
@@ -50,17 +53,122 @@
 				<small>Showing All projects by date</small>
 			</div>
 			<ul id="portfolio">
-				<!-- Aries Defense, LLC June 2019 - Present -->
+				<!-- REU GSU Summer Research July 2021 - August 2021 -->
+				<li class="project" data-filter="Work Game Unity C#" style="order: -202108;">
+					<figure class="projectFig">
+						<img src="./Files/Images/placeholder.jpg" alt="">
+						<figcaption>
+							<h2>Research in Immersive Media Computing at Georgia State University</h2>
+							<div>
+								Our research was into developing systems for measuring and controlling player suspense
+								in games and is being published in the EAI ArtsIT 2021 conference.
+							</div>
+							<button value="REU" class="infoButton">
+								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
+							</button>
+						</figcaption>
+					</figure>
+				</li>
+
+				<!-- Spearit September 2021 -->
+				<li class="project" data-filter="Game Unity C#" style="order: -202109;">
+					<figure class="projectFig">
+						<img src="./Files/Images/placeholder.jpg" alt="">
+						<figcaption>
+							<h2>Spearit</h2>
+							<div>
+								Leading 4 person team in a 15-week long challenge to create a production ready game in
+								Unity.
+							</div>
+							<button value="Spearit" class="infoButton">
+								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
+							</button>
+						</figcaption>
+					</figure>
+				</li>
+
+				<!-- Witch Way Out October 2020 -->
+				<li class="project" data-filter="Game Unity C#" style="order: -202010;">
+					<figure class="projectFig">
+						<img src="Files/Images/ProjectHovers/WWO-hover.gif" alt="">
+						<figcaption>
+							<h2>Witch Way Out</h2>
+							<div>
+								Worked as team lead in designing and devloping a puzzle platformer in Unity.
+								5 week project that took us from starting idea to fully fledged game.
+							</div>
+							<button value="WWO" class="infoButton">
+								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
+							</button>
+						</figcaption>
+					</figure>
+				</li>
+				<!-- Hegemony September 2020 -->
+				<li class="project" data-filter="Game" style="order: -202009;">
+					<figure class="projectFig">
+						<img class="baseImg" src="Files/Images/ProjectBases/hegemony.PNG" alt="">
+						<img class="hoverImg" src="Files/Images/ProjectHovers/hegemony-hover.PNG" alt="">
+						<figcaption>
+							<h2>Hegemony</h2>
+							<div>
+								Worked as team lead in designing and devloping a board game in Tabletop Simulator.
+								5 week project that took us from starting idea to fully fledged board game.
+							</div>
+							<button value="hegemony" class="infoButton">
+								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
+							</button>
+						</figcaption>
+					</figure>
+				</li>
+				<!-- Aries Defense, LLC June 2020 - August 2020 -->
+				<li class="project" data-filter="Work C#" style="order: -202005;">
+					<figure class="projectFig">
+						<img class="baseImg" src="Files/Images/ProjectBases/tnta.jpg" alt="">
+						<img class="hoverImg" src="Files/Images/ProjectHovers/tnta-hover.gif" alt="">
+						<figcaption>
+							<h2>Aries Defense Internship 2020</h2>
+							<div>
+								Overhauled UI for application for using the Aries Defense Tactical Network Trainer Suite
+								on
+								windows devices and reconfigured network connection process to match user
+								specifications.
+								Performed research and devlopment on new technology that utalizes AI vision.
+							</div>
+							<button value="aries2020" class="infoButton">
+								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
+							</button>
+						</figcaption>
+					</figure>
+				</li>
+				<!-- Brick Hack 6: Crunchy -->
+				<li class="project" data-filter="Web" style="order: -202002;">
+					<figure class="projectFig">
+						<img src="Files/Images/ProjectBases/crunchy.png" alt="">
+						<figcaption>
+							<h2>Brick Hack 6: Crunchy</h2>
+							<div>
+								Ever had a hard time deciding what you want to eat? Why not try the Tinder of food!
+								Crunchy was a Hackathon project created for Brick Hack 6. We ended up winning the Best
+								Design award for our web app.
+							</div>
+							<button value="crunchy" class="infoButton">
+								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
+							</button>
+						</figcaption>
+					</figure>
+				</li>
+				<!-- Aries Defense, LLC June 2019 -->
 				<li class="project" data-filter="Work C#" style="order: -201911;">
 					<figure class="projectFig">
-						<img class="baseImg" src="Files/Images/tnta.jpg" alt="">
-						<img class="hoverImg" src="Files/Images/tnta-hover.gif" alt="">
+						<img class="baseImg" src="Files/Images/ProjectBases/tnta.jpg" alt="">
+						<img class="hoverImg" src="Files/Images/ProjectHovers/tnta-hover.gif" alt="">
 						<figcaption>
-							<h2>Aries Defense Internship</h2>
+							<h2>Aries Defense Internship 2019</h2>
 							<div>
 								Developed an application for using the Aries Defense Tactical Network Trainer Suite on
 								windows devices.
-								Currently working remotely to develop new features and implement customer feedback into
+								Working remotely for Fall and Winter to develop new features and implement customer
+								feedback into
 								the application.
 							</div>
 							<button value="aries" class="infoButton">
@@ -72,7 +180,7 @@
 				<!-- Chromatic Intensity: Global Game Jam Jan 2019 -->
 				<li class="project" data-filter="Game Unity C# Jam" style="order: -201901;">
 					<figure class="projectFig">
-						<img src="Files/Images/chromatic.jpg" alt="">
+						<img src="Files/Images/ProjectBases/chromatic.jpg" alt="">
 						<figcaption>
 							<h2>Chromatic Intensity</h2>
 							<div>
@@ -86,64 +194,10 @@
 						</figcaption>
 					</figure>
 				</li>
-				<!-- Computer Science House Fall Hackathon Oct 2018 -->
-				<li class="project" data-filter="Game C# Unity Jam" style="order: -201810;">
-					<figure class="projectFig">
-						<img src="Files/Images/shipgame.jpg" alt="">
-						<figcaption>
-							<h2>Ship Game</h2>
-							<div>
-								A coding challenge for RIT’s Computer Science House’s October Hackathon. I wanted to go
-								beyond Unity’s NavMesh AI and focus on basic AI concepts such as follow, fleeing, and
-								patrolling.
-							</div>
-							<button value="ship" class="infoButton">
-								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
-							</button>
-						</figcaption>
-					</figure>
-				</li>
-				<!-- One Moment Please: GMTK Game Jam Aug 2019 -->
-				<li class="project" data-filter="Game C# Unity Jam" style="order: -201908;">
-					<figure class="projectFig">
-						<img class="baseImg" src="Files/Images/omp.jpg" alt="">
-						<img class="hoverImg" src="Files/Images/omp-hover.gif" alt="">
-						<figcaption>
-							<h2>One Moment Please</h2>
-							<div>
-								My submission for the Game Maker’s Toolkit Game Jam for 2019. This is a top-down
-								turn-based puzzle game, where you have one minute to enter commands for your worker
-								before he executes your commands in turn order against the robots.
-							</div>
-							<button value="omp" class="infoButton">
-								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
-							</button>
-						</figcaption>
-					</figure>
-				</li>
-				<!-- Daily Dunce: RIT Game Dev Club Game Jam November 2018 -->
-				<li class="project" data-filter="Game C# Unity Jam" style="order: -201811;">
-					<figure class="projectFig">
-						<img src="Files/Images/daily.jpg" alt="">
-						<figcaption>
-							<h2>Daily Dunce</h2>
-							<div>
-								Created for RIT Game Dev Club’s 2018 Game Jam. The theme was ‘Daily life’ and we wanted
-								to create a game where you have to perform chores but with a handicap. Our idea was to
-								have the player character be ‘drunk’, represented by the camera and player controls
-								being oversensitive and prone to random effects. We created 3 levels where you have to
-								feed your pet cat, drive to the store, and get groceries.
-							</div>
-							<button value="dunce" class="infoButton">
-								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
-							</button>
-						</figcaption>
-					</figure>
-				</li>
 				<!-- Server Ducks: BrickHack V Feb 2019 -->
-				<li class="project" data-filter="Game C# Unity Jam" style="order: -201902;">
+				<li class="project" data-filter="Game C# Unity Jam hide" style="order: -201902;">
 					<figure class="projectFig">
-						<img src="Files/Images/ducks.jpg" alt="">
+						<img src="Files/Images/ProjectBases/ducks.jpg" alt="">
 						<figcaption>
 							<h2>Server Ducks</h2>
 							<div>
@@ -158,33 +212,17 @@
 						</figcaption>
 					</figure>
 				</li>
-				<!-- Edlogics Jul 2017 - Oct 2017 -->
-				<li class="project" data-filter="Work hide" style="order: -201707;">
-					<figure class="projectFig">
-						<img src="Files/Images/edlogic.jpg" alt="">
-						<figcaption>
-							<h2>Edlogics</h2>
-							<div>
-								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque laudantium reiciendis
-								optio eum, labore tempora dignissimos, reprehenderit maiores itaque et in, praesentium
-								ut nam. Aut aliquam exercitationem magnam alias explicabo!
-							</div>
-							<button value="edlogics" class="infoButton">
-								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
-							</button>
-						</figcaption>
-					</figure>
-				</li>
 				<!--  Project Riptide Jan 2019 – Present -->
-				<li class="project" data-filter="Game C# Unity" style="order: -201911;">
+				<li class="project" data-filter="Game C# Unity" style="order: -202102;">
 					<figure class="projectFig">
-						<img src="Files/Images/ImageSources/riptide1.jpg" alt="">
+						<img src="Files/Images/ProjectBases/riptide1.jpg" alt="">
 						<figcaption>
 							<h2>Project Riptide</h2>
 							<div>
-								Project Riptide is my first attempt at a long term, large scale game project. We are a
-								team of 7 working to develop (and hopefully release) a fully working mobile sailing
-								game.
+								Project Riptide is my first attempt at a long term, large scale game project. I worked
+								as project manager
+								in a team of 7 working to develop a fully working mobile sailing game avaliable now on
+								the Google Play Store.
 							</div>
 							<button value="riptide" class="infoButton">
 								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -193,9 +231,9 @@
 					</figure>
 				</li>
 				<!-- Profoilio Website Oct 2018 – Present -->
-				<li class="project" data-filter="Web" style="order: -201911;">
+				<li class="project" data-filter="Web hide" style="order: -201911;">
 					<figure class="projectFig">
-						<img src="Files/Images/ImageSources/porfolio1.PNG" alt="">
+						<img src="Files/Images/ProjectBases/portfolio2.PNG" alt="">
 						<figcaption>
 							<h2>Portfolio Website</h2>
 							<div>
@@ -212,7 +250,7 @@
 				<!-- IGME 235 Homework Oct 2019 -->
 				<li class="project" data-filter="Web" style="order: -201911;">
 					<figure class="projectFig">
-						<img src="Files/Images/hinterworld.jpg" alt="">
+						<img src="Files/Images/ProjectBases/hinterworld.jpg" alt="">
 						<figcaption>
 							<h2>Meat Clicker</h2>
 							<div>
@@ -226,48 +264,15 @@
 						</figcaption>
 					</figure>
 				</li>
-				<!-- NSA Teaching March 2016 -->
-				<li class="project" data-filter="Work Game hide" style="order: -201603;">
-					<figure class="projectFig">
-						<img src="Files/Images/lvlup.jpg" alt="">
-						<figcaption>
-							<h2>NSA Leveled Up Village</h2>
-							<div>
-								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda excepturi voluptatum
-								nihil vel molestiae deleniti doloremque ducimus minima aliquid fugiat alias cupiditate
-								debitis nemo quas aut dolores, inventore illum unde!
-							</div>
-							<button value="luv" class="infoButton">
-								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
-							</button>
-						</figcaption>
-					</figure>
-				</li>
-				<!-- NSA Summer Teacher July 2016 -->
-				<li class="project" data-filter="Work Python hide" style="order: -201607;">
-					<figure class="projectFig">
-						<img src="Files/Images/nsa1.jpg" alt="">
-						<figcaption>
-							<h2>NSA Computer Camp</h2>
-							<div>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, culpa minima quam
-								doloremque consectetur eveniet labore ad nulla voluptatum! Sequi fugit fuga odio
-								asperiores totam, ducimus ut nemo. Dolores, enim?
-							</div>
-							<button value="compcamp" class="infoButton">
-								More Info <i class="fa fa-angle-right" aria-hidden="true"></i>
-							</button>
-						</figcaption>
-					</figure>
-				</li>
 			</ul>
 		</div>
 		<div id="page2" class="OOF">
-			<button id="bodyBack">
-				<i class="fa fa-angle-left" aria-hidden="true"> Back to Portfolio</i>
-			</button>
 			<div id="projectContents">
-				<h1>Server Ducks</h1>
+				<div class="heading">
+					<div>
+						<h1>Project Title</h1>
+					</div>
+				</div>
 				<div id="pjLink"><span></span></div>
 				<dl>
 					<dt>Project Type</dt>
@@ -284,7 +289,6 @@
 				<figure id="portFig">
 					<!-- These Images are replaced in the script, I know that they error -->
 					<img src="Files/Images/placeholder.jpg" alt="">
-					<img src="Files/Images/placeholder.jpg" alt="">
 				</figure>
 			</div>
 		</div>
@@ -297,6 +301,8 @@
 	</main>
 	<script src="javascript/headerScript.js"></script>
 	<script src="javascript/main.js"></script>
+	<script src="javascript/projects.js"></script>
+	<script src="javascript/projectInformation.js"></script>
 </body>
 
 </html>
