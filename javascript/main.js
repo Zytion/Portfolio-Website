@@ -2,16 +2,18 @@ let projects = document.querySelectorAll(".project");
 let small = document.querySelector("#filters small");
 let loadtime = 1000;
 let filterClick = (e) => {
-    for (let li of filters) {
-        li.removeEventListener("click", filterClick);
-    }
-    load();
-    setTimeout(() => {
-        filterProjects(e.target.dataset.filter);
-        setTimeout(() => {
-            unload();
-        }, loadtime / 2);
-    }, loadtime / 2);
+    // for (let li of filters) {
+    //     li.removeEventListener("click", filterClick);
+    // }
+    filterProjects(e.target.dataset.filter);
+
+    // load();
+    // setTimeout(() => {
+    //     filterProjects(e.target.dataset.filter);
+    //     setTimeout(() => {
+    //         unload();
+    //     }, loadtime / 2);
+    // }, loadtime / 2);
 }
 
 function filterProjects(filter)

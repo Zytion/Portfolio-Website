@@ -1,0 +1,135 @@
+body {
+    color: #1D1A05;
+}
+div.heading {
+    background-image: url("../Files/Images/me3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30vw;
+}
+
+div.heading > div {
+    width: 100%;
+    margin: 0;
+    padding: 1em 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0
+    black;
+}
+
+div.heading h1 {
+    background-color: #b10f2dbb;
+    text-align: center;
+    padding: 0.5em;
+    color: #ffffff;
+}
+
+section {
+    background-color: white;
+}
+
+div#intro {
+    background-color: #B10F2E;
+    padding-bottom: 10em;
+    font-size: 1.1em;
+    color: #EFEFEF;
+}
+div#intro p {
+    margin: 10px 150px;
+}
+
+h2, h3, h4 {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+h4 {
+    color: #B10F2E;
+}
+
+div#content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: -8em 1em 0 1em;
+    background-color: #EFEFEF;
+    border-radius: 1em;
+    border: 1px solid black;
+}
+
+div.line {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+div.column {
+    margin: 5px;
+}
+
+div.column > *
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+
+}
+
+ul {
+    padding: 0;
+    margin-top: 5px;
+}
+
+#projects {
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.project {
+    width: 30%;
+}
+
+button {
+    width: 10em;
+}
+
+@media screen and (max-width: 900px) {
+    #projects {
+        flex-flow: column wrap;
+    }
+
+    .project {
+        width: 32%;
+        font-size: 0.8em;
+    }
+
+    div#intro p {
+        margin: 10px 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #projects {
+        flex-flow: column wrap;
+    }
+
+    .project {
+        width: 90%;
+        font-size: 1em;
+    }
+
+    div#intro p {
+        margin: 10px 30px;
+    }
+
+    div#content {
+        flex-flow: column wrap;
+    }
+
+}

@@ -1,9 +1,8 @@
 let toProject = (e) => {
     window.scrollTo(0, 0);
-    load();
     page2.className = "";
     page1.className = "hidden";
-
+//load();
     switch (e.target.value) {
         case 'Spearit':
             changeDetails("Spearit",
@@ -22,7 +21,7 @@ let toProject = (e) => {
         case 'REU':
             changeDetails("Research in Immersive Media Computing at Georgia State University",
                 "Summer Internship",
-                "July 2021 - August 2021",
+                "July 2021 - November 2021",
                 "Intern",
                 "" +
                 "" +
@@ -205,10 +204,7 @@ let toProject = (e) => {
             'https://devpost.com/software/crunchy-5gvd6o');
             break;
         default:
-            header.innerHTML = "Project Not Found";
-            for (let detail of details) {
-                detail.innerHTML = "N/A";
-            }
+            changeDetails("title", "type", "date", "role", "info", '', '', '');
             break;
     }
 }
