@@ -1,39 +1,23 @@
 body {
     color: #1D1A05;
 }
-div.heading {
-    background-image: url("../Files/Images/me3.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 30vw;
-}
-
-div.heading > div {
-    width: 100%;
-    margin: 0;
-    padding: 1em 0;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 0
-    black;
-}
-
-div.heading h1 {
-    background-color: #b10f2dbb;
-    text-align: center;
-    padding: 0.5em;
-    color: #ffffff;
-}
 
 section {
-    background-color: white;
+    background-color: #444;
+}
+
+#cover {
+    height: 100vh;
+    width: 100vw;
+}
+#cover img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 div#intro {
-    background-color: #B10F2E;
+    background-color: #0c751e;
     padding-bottom: 10em;
     font-size: 1.1em;
     color: #EFEFEF;
@@ -90,6 +74,9 @@ ul {
     align-items: center;
     padding-bottom: 10px;
 }
+#projects h2 {
+    color: white;
+}
 
 .project {
     width: 30%;
@@ -98,6 +85,31 @@ ul {
 button {
     width: 10em;
 }
+
+h1 {
+    font-size: 50px;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 290px;
+    animation-name: upwards;
+    animation-duration: 2s;
+    top: 40vh;
+}
+
+@keyframes upwards {
+    from {
+        top: 100vh;
+    }
+    to {
+        top: 40vh;
+    }
+}
+
+
+
 
 @media screen and (max-width: 900px) {
     #projects {

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Robert Levin - Chrono-GeoGuesser</title>
+    <link rel="icon" type="img/png" href="../Files/Images/logo_black.png" />
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <link rel="stylesheet" href="../CSS/project.css">
+    <script src="https://kit.fontawesome.com/5048bd44a4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <a href="/">Home</a>
+            <a class="active" href="/projects">Projects</a>
+            <a href="/resume">Resume</a>
+            <a href="/#contact">Contact</a>
+            <div class="topnav-right">
+                <a href="https://zytion-levin.itch.io"><i class="fa-brands fa-itch-io"></i></a>
+                <a href="https://www.linkedin.com/in/robert-levin"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Zytion"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </header>
+    <main style="background-color: #2c3d55; color: #c9c9c9;">
+        <div id="cover">
+            <img src="../Files/Images/ProjectHeaders/geoheader.PNG" alt="">
+        </div>
+        <h1>Chrono-GeoGuesser</h1>
+        <section id="content">
+            <div>
+                <button id="pjLink">
+                    <a href="https://people.rit.edu/bil1616/330/Project2/" target="_blank">View Project <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </button>
+                <h2>Overview</h2>
+                <p>
+                    I created a game similar to GeoGuessr, a game where they give you a single image and you have to use
+                    that to figure out where on the map the image was taken. My game works on a similar premise but
+                    instead of a random image I use historical events. The idea is that you are given the name (and
+                    optionally an image and/or hint) of a historical event that is on wikipedia and you have to put a
+                    marker down on the map at the location where you think that event occurred.
+                </p>
+                <p>
+                    I built this by pulling a list of historical events from the Wikipedia API using a keyword like this
+                    (The “incategory%3ACoordinates_on_Wikidata” part of the search ensures that I am getting a wiki page
+                    that has coordinates attached). I then pick one of the events from the list and use the page id to
+                    get the coordinates of the event like this. I can use a similar process for getting the image from
+                    the page. I then plug that in to the mapbox API to get a working map where you can place a single
+                    pin down for your guess. The mapbox API has a feature for calculating the distance between points
+                    and I use that to calculate a score and then I then save it (along with the other stats) into local
+                    storage.
+
+                </p>
+                <h2>My Role</h2>
+                <p>
+                    I was the designer and sole devloper for this project.
+                </p>
+            </div>
+            <div>
+                <img src="../Files/Images/DetailsImages/geodetail.PNG" alt="">
+            </div>
+        </section>
+    </main>
+    <section id="contact">
+        <div>
+            18levrob@gmail.com | 757-679-6025
+        </div>
+        <div id="icons">
+            <a href="https://zytion-levin.itch.io"><i class="fa-brands fa-itch-io"></i></a>
+            <a href="https://www.linkedin.com/in/robert-levin"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Zytion"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </section>
+</body>
+
+</html>

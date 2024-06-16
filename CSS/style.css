@@ -28,63 +28,11 @@ figure.projectFig, .projectFig > img {
   width: 30%;
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: #666a6e;
-    overflow: hidden;
-    display: flex;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 0.5em;
-    text-decoration: none;
-  }
-  
-  .topnav a:not(:first-child) {
-      float: right;
-  }
-
-  .topnav a:not(:first-child) > i{
-    vertical-align: middle;
-  }
-
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #acacac;
-  }
-  
-  /* Add an active class to highlight the current page */
-  .topnav a.active {
-    background-color: #FFFFFF;
-    color: #1D1A05;
-    margin-right: auto;
-  }
-  
-  /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
-    display: none;
-  }
-
-.topnav img {
-  height: 2em;
-}
 main > * {
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
     transition: transform 0.5s ease-in-out 0.5s;
-}
-
-#page2 h1 {
-  background-color: transparent;
-}
-
-#page2 div.heading {
-  height: 20vh;
 }
 
 footer {
@@ -198,177 +146,13 @@ img.hoverImg {
   justify-content: flex-start;
 }
 
-#filters li {
-  padding: 0.5em;
-  text-transform: uppercase;
-  margin: 0.2em 0.2em;
-  font-weight: 700;
-  font-size: 1em;
-  line-height: 1em;
-  cursor: pointer;
-  border-width: 1px 1px 2px 1px;
-  border-style: solid;
-  border-color:#222;
-  border-radius: 3px;
-  background-color: #BC1030;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
-}
-#filters li:hover
-{
-  background-color: #f70934;
-}
-#filters li:active
-{
-  background-color: #ff0000
-}
-
-#page2 {
-  min-height: 100vh;
-  width: 100vw;
-  margin: 0%;
-  padding: 0%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #797D81;
-  color: white;
-  display: flex;
-  flex-flow: row nowrap;
-  z-index: 100;
-  align-content: center;
-}
-
 .OOF {
   transform: translate(-100% , 0);
   z-index: -1000;
 }
 
-#bodyBack {
-  background-color: #ffffff0d;
-  color: white;
-  border: transparent;
-  font-size: 2em;
-  width: 10em;
-  flex-shrink: 0;
-}
-
-#bodyBack:hover {
-  color: #929292;
-  background-color: #ffffff1e;
-}
-
-
-#projectContents {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-  width: 100%;
-}
-
-#projectContents h1 {
-  text-decoration: underline;
-  margin: 10px;
-}
-
-#projectContents dl {
-  margin: 0;
-}
-
-#projectContents dt {
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-#projectContents figure {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-}
-#projectContents figure > img {
-  width: 30%;
-}
-
-
 iframe {
   display: block;
-}
-
-#pjDetails {
-  padding: 0 5em;
-}
-
-#pjLink {
-  padding: 1em;
-}
-#pjLink a {
-  color: white;
-  display: inline-block;
-  text-decoration: none;
-  border-radius: 0.1em;
-  padding: 0.5em;
-  font-size: 1em;
-  background-color: #BC1030;
-  box-shadow: 0 5px #4d4d4d;
-  transition: background-color 0.1s linear;
-}
-
-#pjLink a:visited {
-  text-decoration: none;
-}
-
-#pjLink a:hover {background-color: #da0f0f}
-
-#pjLink a:active {
-  background-color: #da0f34;
-  box-shadow: 0 3px #4d4d4d;
-  transform: translateY(4px);
-}
-
-#loadingTop, #loadingBot {
-  transition: transform 0.5s ease-in-out;
-  width:  100vw;
-  height: 50vh;
-  text-align: center;
-  z-index: 10000;
-  position: fixed;
-  left: 0;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-}
-#loadingTop {
-  background-color: #333333;
-  top: 0;
-  transform: translateX(100vw);
-  align-items: flex-end;
-}
-
-#loadingTop h1 {
-  margin: 0;
-}
-
-#loadingBot {
-  background-color: #444444;
-  bottom: 0;
-  transform: translateX(-100vw);
-  align-items: flex-start;
-}
-
-#loadingTop.load, #loadingBot.load {
-  transform: translateX(0);
-}
-
-#loadingBot.unload {
-  transform: translateX(100vw);
-}
-#loadingTop.unload {
-  transform: translateX(-100vw);
-}
-
-#loadingTop h1 {
-  position: relative;
-  bottom: 0;
 }
 
 .reset {

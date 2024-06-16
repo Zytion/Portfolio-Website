@@ -17,7 +17,7 @@
 </head>
 <body>
 <header class="topnav" id="myTopnav">
-		<a href="../index.html" class="active"><img src="../Files/Images/logo2.png" alt="Robert Levin" height="38"></a>
+		<a href="/" class="active"><img src="../Files/Images/logo2.png" alt="Robert Levin" height="38"></a>
 		<a href="https://zytion-levin.itch.io" target="_blank">
 			<!-- <img src="Files/Images/itchio-textless-black.svg" height="16" alt="">  -->
 			<i class="fa fa-gamepad" aria-hidden="true"> Itch.io</i></a>
@@ -56,7 +56,7 @@
  	// We will use the $_POST "super global" associative array to extract the values of the form fields
 	// #1 - was the submit button pressed?
     if (isset($_POST["submit"])){ 
-    	$to = "bil1616@rit.edu"; // !!! REPLACE WITH YOUR EMAIL !!!
+    	$to = "18levrob@gmail.com"; // !!! REPLACE WITH YOUR EMAIL !!!
     	
     	// #2 - if a value for the `email` form field is missing, give a default value
     	// else, use the value from the form field
