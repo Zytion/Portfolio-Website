@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
@@ -6,6 +8,10 @@
     position: sticky;
     top: 0;
     width: 100%;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Style the links inside the navigation bar */

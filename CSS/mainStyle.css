@@ -1,5 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 body {
     color: #1D1A05;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.eb-garamond-normal {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.comic-neue-regular {
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 section {
@@ -10,6 +30,7 @@ section {
     height: 100vh;
     width: 100vw;
 }
+
 #cover img {
     height: 100%;
     width: 100%;
@@ -21,12 +42,17 @@ div#intro {
     padding-bottom: 10em;
     font-size: 1.1em;
     color: #EFEFEF;
-}
-div#intro p {
-    margin: 10px 150px;
+    padding-top: 1em;
+
 }
 
-h2, h3, h4 {
+div#intro p {
+    margin: 10px 15vw;
+}
+
+h2,
+h3,
+h4 {
     margin-bottom: 0;
     text-align: center;
 }
@@ -54,8 +80,7 @@ div.column {
     margin: 5px;
 }
 
-div.column > *
-{
+div.column>* {
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
@@ -74,6 +99,7 @@ ul {
     align-items: center;
     padding-bottom: 10px;
 }
+
 #projects h2 {
     color: white;
 }
@@ -89,10 +115,10 @@ button {
 h1 {
     font-size: 50px;
     position: absolute;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 290px;
     animation-name: upwards;
     animation-duration: 2s;
@@ -103,6 +129,7 @@ h1 {
     from {
         top: 100vh;
     }
+
     to {
         top: 40vh;
     }
